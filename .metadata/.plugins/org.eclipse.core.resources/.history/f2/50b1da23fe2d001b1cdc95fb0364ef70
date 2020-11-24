@@ -1,0 +1,38 @@
+package test;
+
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class TestApp extends JFrame {
+	private Container c;
+	private JLabel labelTel, labelMessage;
+	private JTextField tfTel, tfMessage;
+	private JButton btnSend;
+	public void initObject() {
+		c = getContentPane();
+		labelTel = new JLabel();
+		labelMessage = new JLabel();
+		tfTel = new JTextField();
+		tfMessage = new JTextField();
+		btnSend = new JButton();
+	}
+	public void initSetting() {
+		
+	}
+	public void initBatch() {
+		
+	}
+	public TestApp() {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

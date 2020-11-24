@@ -1,0 +1,43 @@
+package test;
+
+import java.awt.Container;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class TestApp extends JFrame {
+	private Container c;
+	private JLabel labelTel, labelMessage;
+	private JTextField tfTel, tfMessage;
+	private JButton btnSend;
+	public void initObject() {
+		c = getContentPane();
+		labelTel = new JLabel("전화번호");
+		labelMessage = new JLabel("메시지");
+		tfTel = new JTextField();
+		tfMessage = new JTextField();
+		btnSend = new JButton("전송");
+	}
+	public void initSetting() {
+		c.setLayout(new GridLayout(3,2));
+	}
+	public void initBatch() {
+		c.add(labelTel);
+		c.add(tfTel);
+		c.add(labelMessage);
+		c.add(tfMessage);
+		c.add(btnSend);
+	}
+	public TestApp() {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
